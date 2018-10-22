@@ -236,13 +236,20 @@ margin: 40px 0;
   padding-bottom: 52px;
 }
 
-/*--------2018_august_changes---------------------------------------------------*/
+/*--------2018_august-october_changes---------------------------------------------------*/
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-  @media (max-width: 767px) {
-    .navbar-fixed-bottom {
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-nav > li > a {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-fixed-bottom {
       position: absolute;
       bottom: -130px;
     }
