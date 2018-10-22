@@ -246,13 +246,20 @@ html, body {
   .navbar-nav > li > a {
     padding: 15px 10px;
   }
+
+  .inner-header h3 {
+    font-size: 150%;
+  }
 }
 
 @media (max-width: 767px) {
   .navbar-fixed-bottom {
       position: absolute;
       bottom: -130px;
-    }
+  }
+  .inner-header h3 {
+    font-size: 130%;
+  }
   .swarm-page.main-tutorial {
     min-height: 900px;
   }
