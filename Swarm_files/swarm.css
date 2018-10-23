@@ -238,17 +238,50 @@ margin: 40px 0;
 
 /*--------2018_august-october_changes---------------------------------------------------*/
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#tutorial-start {
+  height: 100vh;
+}
+
+@media (max-width: 1166px) {
+    /* tagline text*/
+  .inner-header h3 {
+    font-size: 150%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-nav > li > a {
     padding: 15px 10px;
   }
+  .inner-header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Animated logo */
+  #tutorial-start .container .row > .tutorial {
+    float: left;
+    width: 50%;
+  }
+}
 
+@media (max-width: 800px) {
+  .inner-header {
+    padding: 0;
+  }
+  .inner-header .header-title {
+    padding-left: 0;
+  }
+  .inner-header .header-title h3 {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
   .inner-header h3 {
-    font-size: 150%;
+    text-align: left;
   }
 }
 
@@ -257,6 +290,10 @@ html, body {
       position: absolute;
       bottom: -130px;
   }
+  .row {
+    text-align: center;
+  }
+  /* tagline text*/
   .inner-header h3 {
     font-size: 130%;
   }
@@ -269,10 +306,10 @@ html, body {
   .main {
   padding: 0;
   }
-   .main ul.frontpage-services {
+  .main ul.frontpage-services {
   display: block;
   }
-   .linkframe a {
+  .linkframe a {
   display: block;
   }
   .linkframe a:nth-child(2) i {
